@@ -2,37 +2,41 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  min-height: 96.5vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.banner {
+  height: 30vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: url('https://wallpaperaccess.com/full/124383.jpg');
 }
 
-.App-link {
-  color: #61dafb;
+.search-area {
+  background-color: rgb(0, 0, 0, .7);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer {
+  height: 3.5vh;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  html,
+  body {
+    font-size: 11px;
+    ;
   }
-  to {
-    transform: rotate(360deg);
+
+  .banner {
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    background-image: url('https://wallpaperaccess.com/full/124383.jpg');
   }
 }
